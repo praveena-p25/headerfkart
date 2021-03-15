@@ -1,6 +1,13 @@
 .card{
     padding: 20px;
 }
+
+.card>.dots{
+    width: 10px;
+    height: 10px;
+    color: gray;
+ }
+ 
 .card>.card__image>img{
     width: 200px;
     height: 100px;
@@ -62,3 +69,4 @@
 .card:hover .productDet>.card__size{
     opacity: 1;
 }
+
