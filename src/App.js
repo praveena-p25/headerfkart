@@ -6,8 +6,10 @@ import {useState} from 'react';
 // import { Card } from "@material-ui/core";
 import Card from "./Card";
 
- 
 
+
+
+ 
 function App() {
   const [category, setCategory] = useState([])
   useEffect(() => {
@@ -23,12 +25,28 @@ function App() {
         if (command === "toys") {
           filter("toys");
         }
+        if (command === "denim"){
+          filter("denim");
+        }
+        if (command === "cycle"){
+          filter("cycle");
+        }
+        if (command === "shorts"){
+          filter("shorts");
+        }
 
       },
     });
     filter("");
   }, []);
   
+
+
+
+  
+
+
+
 
   const filter = (names) => {
   //    const filtered = Data.filter(function (item) {
@@ -43,6 +61,10 @@ function App() {
     console.log(filtered);
     setCategory(filtered);
   };  
+
+
+
+
 
   return (
     <div className="App">

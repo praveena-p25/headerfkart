@@ -56,6 +56,9 @@ const Card = ({offerPrice, image, name, rating, actualPrice}) => {
             </div>
             <div className="card__size">
                  <p>size <span>6,7,8,9</span>  </p>
+                 <button>Add to Cart</button>
+                 
+                 
             </div>
             </div>
             </div>
